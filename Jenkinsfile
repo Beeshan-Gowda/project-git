@@ -4,28 +4,28 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git url: 'https://github.com/Beeshan-Gowda/project-git', branch: 'main'
+                git url: 'https://github.com/Beeshan-Gowda/project-git'
             }
         }
 
         stage('Build') {
             steps {
                 echo 'Building...'
-                // Add your build commands here, e.g., sh 'make'
+                // sh 'make'
             }
         }
 
         stage('Test') {
             steps {
                 echo 'Testing...'
-                // Add your test commands here, e.g., sh 'make test'
+                // 'make test'
             }
         }
 
         stage('Deploy') {
             steps {
                 echo 'Deploying...'
-                // Add your deployment commands here, e.g., sh 'make deploy'
+                // sh 'make deploy'
             }
         }
     }
